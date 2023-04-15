@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "OPPOSans-B";
+    src: url("../assets/font/OPPOSans-B.ttf");
+}
+
+@font-face {
+    font-family: "OPPOSans-H";
+    src: url("../assets/font/OPPOSans-H.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(33,33,33);
+    font-family: "OPPOSans-B";
+}
+
+#list {
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-color: rgb(33,33,33);
+    width: 350px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
