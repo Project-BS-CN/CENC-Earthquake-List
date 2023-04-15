@@ -24,7 +24,6 @@
 import { computed } from 'vue'
 import { calcMaxInt } from '../Functions'
 import _ from '../resource/intColor.json'
-import '../css/list.css'
 
 let intColor: any = _
 
@@ -43,3 +42,72 @@ let maxIntColor: any = computed(() => {
     return intColor[maxInt.value].bgcolor
 })
 </script>
+
+<style>
+#mainBar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 98px;
+	width: 350px;
+	color: white;
+}
+
+#mainLeft {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 98px;
+	width: 248px;
+	background-color: #333333;
+	border-radius: 10px;
+	border: 3px solid white;
+	box-sizing: border-box;
+}
+
+#mainMaxInt {
+	position: absolute;
+	height: 98px;
+	width: 98px;
+	right: 0px;
+	background-color: #444444;
+	border-radius: 10px;
+	line-height: 98px;
+	font-size: 72px;
+	font-family: OPPOSans-H !important;
+	text-align: center;
+	text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	border: 3px solid white;
+	box-sizing: border-box;
+}
+
+#mainTime {
+	position: relative;
+	top: 2px;
+	left: 4px;
+	font-size: 16px;
+}
+
+#mainEpicenter {
+	position: relative;
+	top: 2px;
+	left: 4px;
+	font-size: 20px;
+	line-height: 22px;
+	width: 237px;
+}
+
+#mainDepth {
+	position: absolute;
+	bottom: 0px;
+	left: 4px;
+	font-size: 25px;
+}
+
+#mainMagnitude {
+	position: absolute;
+	bottom: 0px;
+	right: 4px;
+	font-size: 25px;
+}
+</style>

@@ -59,3 +59,67 @@ function getId(type: any){
     return `sub${type}${props.id}`
 }
 </script>
+
+<style>
+[id^="subBar"] {
+	position: relative;
+	left: 0px;
+	height: 48px;
+	width: 350px;
+	color: white;
+	margin-top: 4px;
+}
+
+[id^="subLeft"] {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	height: 48px;
+	width: 298px;
+	background-color: #333333;
+	border-radius: 10px;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+[id^="subMaxInt"] {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 48px;
+	width: 48px;
+	background-color: #444444;
+	border-radius: 10px;
+	line-height: 48px;
+	font-size: 30px;
+	font-family: OPPOSans-H !important;
+	text-align: center;
+	text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+[id^="subTime"] {
+	position: relative;
+	top: 0px;
+	left: 4px;
+	font-size: 15px;
+}
+[id^="subEpicenter"] {
+	position: relative;
+	top: -5px;
+	left: 4px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	height: 25px;
+}
+
+[id^="subMagnitude"] {
+	position:absolute;
+	right: 4px;
+	font-size: 21px;
+	line-height: 44px;
+	top: 0px;
+}
+</style>
