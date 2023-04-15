@@ -1,4 +1,4 @@
-# CENC Earthquake List=
+# CENC Earthquake List
 
 ## Data From
 - CENC(China Earthquake Networks Center).
