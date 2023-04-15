@@ -21,7 +21,6 @@
 import { computed } from 'vue'
 import { calcMaxInt } from '../Functions'
 import _ from '../resource/intColor.json'
-import '../css/list.css'
 
 let props = defineProps<{
     time?: any,
